@@ -19,9 +19,8 @@
                                 <a href="#">{{value.categoria}}</a>
                             </p>
                             <h3><a href="product.html">{{value.nombre}}</a></h3>
-                        </div><!--
-                    No Space
-                    -->
+                        </div>
+
                         <div class="prod-li-prices">
                             <div class="prod-li-price-wrap">
                                 <p>Precio</p>
@@ -38,9 +37,7 @@
                                 <p>Total</p>
                                 <p class="prod-li-total">${{value.subtotal}}</p>
                             </div>
-                        </div><!--
-                No Space
-                -->
+                        </div>
                     </div>
                     <div class="prod-li-info">
                         <div class="prod-li-rating-wrap">
@@ -71,7 +68,7 @@
         </div>
         <div class="cart-collaterals">
             <a href="{% url 'web:limpiarCarrito' %}" class="checkout-button button">Limpiar Carrito</a>
-            <a href="{% url 'web:registrarPedido' %}" class="checkout-button button">Realizar Pedido</a>
+            <a href="#" class="checkout-button button">Realizar Pedido</a>
             <div class="order-total">
                 <p class="cart-totals-ttl">Total</p>
                 <p class="cart-totals-val">${{request.session.cartMontoTotal}}</p>
